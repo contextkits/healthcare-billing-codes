@@ -1,0 +1,21 @@
+[project]
+name = "healthcare-billing-codes"
+version = "0.1.0"
+description = "MCP server for healthcare billing code lookup (CPT, ICD-10, HCPCS)"
+authors = [{name = "Grace", email = "your-email@example.com"}]
+license = {text = "MIT"}
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=0.9.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/healthcare-billing-codes"
+Repository = "https://github.com/yourusername/healthcare-billing-codes"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+healthcare-billing-codes = "server:main"
